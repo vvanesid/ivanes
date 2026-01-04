@@ -81,7 +81,7 @@ const heroData = {
         desc: "Mage/Tank dengan spirit beast untuk crowd control.",
         role: "Mage/Tank",
         lane: "Side Lane",
-        skins: ["assets/images/arum/arum.jpg", "assets/images/arum/arum2.jpg", "assets/images/arum/arum3.jpg", "assets/images/arum/arum4.jpg", "assets/images/arum/arum5.jpg", "assets/images/arum/arum6.jpg"]
+        skins: ["assets/images/Arum/arum.jpg", "assets/images/Arum/arum2.jpg", "assets/images/Arum/arum3.jpg", "assets/images/Arum/arum4.jpg", "assets/images/Arum/arum5.jpg", "assets/images/Arum/arum6.jpg"]
     },
     "Diaochan": {
         desc: "Mage dengan skill area dan crowd control beku.",
