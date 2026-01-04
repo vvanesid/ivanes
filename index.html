@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arena of Valor - Home</title>
+  <link href="css/output.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 text-white relative overflow-hidden min-h-screen flex flex-col">
+  <audio id="bgmPlayer" autoplay></audio>
+  <div id="slider" class="fixed inset-0 -z-10">
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition duration-1000"
+      style="background-image: url('assets/images/Violet/violet.jpg');"></div>
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition duration-1000"
+      style="background-image: url('assets/images/Illumia/illumia.jpg');"></div>
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition duration-1000"
+      style="background-image: url('assets/images/Liliana/liliana.jpg');"></div>
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition duration-1000"
+      style="background-image: url('assets/images/Grakk/grakk.jpg');"></div>
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition duration-1000"
+      style="background-image: url('assets/images/Rouie/rouie.jpg');"></div>
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition duration-1000"
+      style="background-image: url('assets/images/Lauriel/lauriel.jpg');"></div>
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition duration-1000"
+      style="background-image: url('assets/images/Payna/payna.jpg');"></div>
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition duration-1000"
+      style="background-image: url('assets/images/Airi/airi.jpg');"></div>
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition duration-1000"
+      style="background-image: url('assets/images/Laville/laville.jpg');"></div>
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition duration-1000"
+      style="background-image: url('assets/images/Errol/errol.jpg');"></div>
+  </div>
+  <nav class="fixed top-0 w-full bg-black/50 backdrop-blur-md text-white z-50 shadow-md">
+    <div class="flex justify-between items-center px-6 py-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logoaov1.png" alt="AOV Logo" class="h-10 w-10 object-contain" />
+        <h1 class="text-2xl font-bold text-yellow-400">Arena of Valor</h1>
+      </div>
+      <ul class="flex gap-6">
+        <li><a href="index.html" class="hover:text-yellow-400 active">Home</a></li>
+        <li><a href="heroes.html" class="hover:text-yellow-400">Heroes</a></li>
+        <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+        <li><a href="collab.html" class="hover:text-yellow-400">Collab</a></li>
+      </ul>
+      <div id="clock" class="text-sm text-gray-300"></div>
+    </div>
+  </nav>
+  <main class="flex-grow flex items-center justify-center pt-24">
+    <section class="text-center">
+      <h2 class="text-4xl font-bold text-yellow-400">Welcome to Arena of Valor</h2>
+      <p class="mt-4 text-gray-200">Experience the thrill of 5v5 MOBA battles.</p>
+      <a href="heroes.html"
+        class="inline-block mt-6 px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg shadow-lg hover:bg-yellow-500 transition transform hover:scale-105">
+        Explore Heroes
+      </a>
+    </section>
+  </main>
+  <button id="prevBtn"
+    class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded hover:bg-opacity-70 z-20">
+    ❮
+  </button>
+  <button id="nextBtn"
+    class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded hover:bg-opacity-70 z-20">
+    ❯
+  </button>
+  <div class="absolute bottom-20 w-full flex justify-center gap-3 z-20">
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+  </div>
+  <footer class="text-center text-gray-400 py-6"
+    style="background: linear-gradient(to top, rgba(17,24,39,0.9), rgba(17,24,39,0.6), rgba(255,215,0,0.2)); backdrop-filter: blur(4px);">
+    <p>&copy; 2026 Ivan Abraham Sayouw | 251011701230 | 01SIFP013. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
