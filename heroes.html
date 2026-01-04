@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="assets/images/logoaov1.png">
+  <title>Arena of Valor - Heroes</title>
+  <link href="css/output.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 text-white">
+  <audio id="bgmPlayer" autoplay></audio>
+  <nav class="fixed top-0 w-full bg-black/30 backdrop-blur-md text-white z-50 shadow-md">
+    <div class="flex justify-between items-center px-6 py-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logoaov1.png" alt="AOV Logo" class="h-10 w-10 object-contain bg-transparent" />
+        <h1 class="text-2xl font-bold text-yellow-400">Arena of Valor</h1>
+      </div>
+      <ul class="flex gap-6">
+        <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="heroes.html" class="hover:text-yellow-400 active">Heroes</a></li>
+        <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+        <li><a href="collab.html" class="hover:text-yellow-400">Collab</a></li>
+      </ul>
+      <div id="clock" class="text-sm text-gray-300"></div>
+    </div>
+  </nav>
+  <main class="pt-24 p-10">
+    <h2 class="text-4xl font-bold text-yellow-400 text-center mb-10">Meet the Heroes</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="hero-card cursor-pointer text-center" data-hero="Airi">
+        <img src="assets/images/airi/airi1.jpg" alt="Airi" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Airi</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Violet">
+        <img src="assets/images/violet/violet.jpg" alt="Violet" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Violet</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Butterfly">
+        <img src="assets/images/butterfly/bf.jpg" alt="Butterfly" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Butterfly</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Lauriel">
+        <img src="assets/images/lauriel/lauriel.jpg" alt="Lauriel" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Lauriel</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Illumia">
+        <img src="assets/images/illumia/illumia.jpg" alt="Illumia" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Illumia</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Mina">
+        <img src="assets/images/mina/mina2.jpeg" alt="Mina" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Mina</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Natalya">
+        <img src="assets/images/natalya/natalya1.jpg" alt="Natalya" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Natalya</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Yena">
+        <img src="assets/images/yena/yena.jpg" alt="Yena" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Yena</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Liliana">
+        <img src="assets/images/liliana/liliana.jpg" alt="Liliana" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Liliana</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Tel'Annas">
+        <img src="assets/images/telanas/telanas.jpg" alt="Tel'Annas" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Tel'Annas</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Veres">
+        <img src="assets/images/veres/veres.jpg" alt="Veres" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Veres</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Qi">
+        <img src="assets/images/qi/qi.jpg" alt="Qi" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Qi</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Amily">
+        <img src="assets/images/amily/amily.jpg" alt="Amily" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Amily</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Arum">
+        <img src="assets/images/arum/arum.jpg" alt="Arum" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Arum</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Diaochan">
+        <img src="assets/images/diaochan/diaochan.jpg" alt="Diaochan" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Diaochan</h3>
+      </div>
+      <div class="hero-card cursor-pointer text-center" data-hero="Krixi">
+        <img src="assets/images/krixigit /krixi.jpg" alt="Krixi" class="rounded-lg" />
+        <h3 class="mt-2 text-yellow-400 font-bold">Krixi</h3>
+      </div>
+    </div>
+  </main>
+  <div id="heroModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center hidden z-50">
+    <div class="bg-gray-900 rounded-xl shadow-lg max-w-md w-full p-6 relative">
+      <button id="closeModal" class="absolute top-4 right-4 text-gray-300 hover:text-yellow-400">✖</button>
+      <div id="heroInfo">
+        <img id="heroImage" src="" alt="Hero" class="rounded-lg shadow-lg mb-4 w-full object-cover" />
+        <h2 id="heroName" class="text-2xl font-bold text-yellow-400 mb-2 text-center">Hero Name</h2>
+        <p id="heroDesc" class="text-gray-200 mb-4 text-center">Deskripsi singkat tentang hero ini.</p>
+        <div class="mb-3">
+          <h3 class="text-lg font-semibold text-yellow-300">Role</h3>
+          <p id="heroRole" class="text-gray-200">Role</p>
+        </div>
+        <div class="mb-3">
+          <h3 class="text-lg font-semibold text-yellow-300">Lane</h3>
+          <p id="heroLane" class="text-gray-200">Lane</p>
+        </div>
+        <button id="viewSkins"
+          class="mt-4 px-4 py-2 bg-yellow-400 text-black font-semibold rounded-lg shadow hover:bg-yellow-500 transition">
+          View Skins
+        </button>
+      </div>
+      <div id="skinSelector" class="hidden">
+        <h3 class="text-xl font-bold text-yellow-400 mb-4 text-center">Choose a Skin</h3>
+        <div class="grid grid-cols-2 gap-4" id="skinGrid"></div>
+        <button id="returnInfo"
+          class="mt-6 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition">Return</button>
+      </div>
+      <div id="skinFull" class="hidden text-center">
+        <img id="skinImage" src="" alt="Skin Full" class="rounded-lg shadow-lg mb-4 w-full object-cover" />
+        <div class="flex justify-between items-center mb-4">
+          <button id="prevSkin" class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition">❮
+            Prev</button>
+          <button id="nextSkin" class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition">Next
+            ❯</button>
+        </div>
+        <button id="returnSkins" class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition">Back
+          to Skins</button>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center text-gray-400 py-6"
+    style="background: linear-gradient(to top, rgba(17,24,39,0.9), rgba(17,24,39,0.6), rgba(255,215,0,0.2)); backdrop-filter: blur(4px);">
+    <p>&copy; 2026 Ivan Abraham Sayouw | 251011701230 | 01SIFP013. All rights reserved.</p>
+  </footer>
+  <script src="js/hero.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="assets/images/logoaov1.png">
+  <title>Arena of Valor - Collaboration</title>
+  <link href="css/output.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 text-white">
+  <audio id="bgmPlayer" autoplay></audio>
+  <audio id="themePlayer" controls class="hidden"></audio>
+  <button id="backUniversal" class="hidden mt-4 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600">
+  ⏮ Back to Lobby
+</button>
+
+  <nav class="fixed top-0 w-full bg-black/30 backdrop-blur-md text-white z-50 shadow-md">
+    <div class="flex justify-between items-center px-6 py-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logoaov1.png" alt="AOV Logo" class="h-10 w-10 object-contain bg-transparent" />
+        <h1 class="text-2xl font-bold text-yellow-400">Arena of Valor</h1>
+      </div>
+      <ul class="flex gap-6">
+        <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="heroes.html" class="hover:text-yellow-400">Heroes</a></li>
+        <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+        <li><a href="collab.html" class="hover:text-yellow-400 active">Collab</a></li>
+      </ul>
+      <div id="clock" class="text-sm text-gray-300"></div>
+    </div>
+  </nav>
+  <main class="pt-24 p-10">
+    <section class="collab-section">
+      <h2 class="text-4xl font-bold text-yellow-400 mb-6 text-center">Collaboration Events</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="collab-card bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition" data-collab="Sanrio">
+          <img src="assets/images/collab/sanrio/sanrio.jpg" alt="Sanrio" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-bold text-yellow-400 mb-2">Sanrio</h3>
+          <button onclick="playTheme('Sanrio', event)"
+            class="mt-2 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-300">▶ Play Theme</button>
+        </div>
+        <div class="collab-card bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition"
+          data-collab="Sword Art Online">
+          <img src="assets/images/collab/sao/sao1.jpg" alt="Sword Art Online"
+            class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-bold text-yellow-400 mb-2">Sword Art Online</h3>
+          <button onclick="playTheme('Sword Art Online', event)"
+            class="mt-2 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-300">▶ Play Theme</button>
+        </div>
+        <div class="collab-card bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition"
+          data-collab="Sailor Moon">
+          <img src="assets/images/collab/sailor/sailor.jpg" alt="Sailor Moon"
+            class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-bold text-yellow-400 mb-2">Sailor Moon</h3>
+          <button onclick="playTheme('Sailor Moon', event)"
+            class="mt-2 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-300">▶ Play Theme</button>
+        </div>
+        <div class="collab-card bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition"
+          data-collab="Ultraman (Netflix)">
+          <img src="assets/images/collab/ultraman/ultraman2.jpg" alt="Ultraman (Netflix)"
+            class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-bold text-yellow-400 mb-2">Ultraman (Netflix)</h3>
+          <button onclick="playTheme('Ultraman (Netflix)', event)"
+            class="mt-2 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-300">▶ Play Theme</button>
+        </div>
+        <div class="collab-card bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition" data-collab="Bleach">
+          <img src="assets/images/collab/bleach/bleach.jpg" alt="Bleach" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-bold text-yellow-400 mb-2">Bleach</h3>
+          <button onclick="playTheme('Bleach', event)"
+            class="mt-2 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-300">▶ Play Theme</button>
+        </div>
+        <div class="collab-card bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition"
+          data-collab="Jujutsu Kaisen">
+          <img src="assets/images/collab/jujutsu/jujutsu.jpg" alt="Jujutsu Kaisen"
+            class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-bold text-yellow-400 mb-2">Jujutsu Kaisen</h3>
+          <button onclick="playTheme('Jujutsu Kaisen', event)"
+            class="mt-2 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-300">▶ Play Theme</button>
+        </div>
+        <div class="collab-card bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition"
+          data-collab="Kimetsu no Yaiba">
+          <img src="assets/images/collab/kimetsu/kimetsu.jpg" alt="Kimetsu no Yaiba"
+            class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-bold text-yellow-400 mb-2">Kimetsu no Yaiba</h3>
+          <button onclick="playTheme('Kimetsu no Yaiba', event)"
+            class="mt-2 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-300">▶ Play Theme</button>
+        </div>
+        <div class="collab-card bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition" data-collab="Tensura">
+          <img src="assets/images/collab/tensura/tensura.jpg" alt="Tensura" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-bold text-yellow-400 mb-2">Tensura</h3>
+          <button onclick="playTheme('Tensura', event)"
+            class="mt-2 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-300">▶ Play Theme</button>
+        </div>
+        <div class="collab-card bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition" data-collab="Hunter X Hunter">
+          <img src="assets/images/collab/hxh/hxh.jpg" alt="Hunter X Hunter" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-bold text-yellow-400 mb-2">Hunter X Hunter</h3>
+          <button onclick="playTheme('Hunter X Hunter', event)"
+            class="mt-2 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-300">▶ Play Theme</button>
+        </div>
+        <div class="collab-card bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition"
+          data-collab="Detective Conan">
+          <img src="assets/images/collab/conan/conan.jpg" alt="Detective Conan"
+            class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-bold text-yellow-400 mb-2">Detective Conan</h3>
+          <button onclick="playTheme('Detective Conan', event)"
+            class="mt-2 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-300">▶ Play Theme</button>
+        </div>
+        <div class="collab-card bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition"
+          data-collab="One Punch Man">
+          <img src="assets/images/collab/onepunch/opm.jpg" alt="One Punch Man"
+            class="w-full h-48 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-bold text-yellow-400 mb-2">One Punch Man</h3>
+          <button onclick="playTheme('One Punch Man', event)"
+            class="mt-2 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-300">▶ Play Theme</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="collabModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center hidden z-50">
+    <div class="bg-gray-900 rounded-xl shadow-lg max-w-lg w-full p-6 relative">
+      <button id="closeCollab" class="absolute top-4 right-4 text-gray-300 hover:text-yellow-400">✖</button>
+      <h2 id="collabTitle" class="text-2xl font-bold text-yellow-400 mb-4 text-center">Collab Title</h2>
+      <img id="collabImage" src="" alt="Collab Skin" class="w-full h-64 object-cover rounded-lg mb-4" />
+      <div class="flex justify-between mb-4">
+        <button id="prevCollab" class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600">❮ Prev</button>
+        <button id="nextCollab" class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600">Next ❯</button>
+      </div>
+      <div id="collabThumbs" class="grid grid-cols-4 gap-2"></div>
+    </div>
+  </div>
+  <footer class="text-center text-gray-400 py-6 bg-gray-900">
+    <p>&copy; 2026 Ivan Abraham Sayouw | 251011701230 | 01SIFP013. All rights reserved.</p>
+  </footer>
+  <script src="js/collab.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
